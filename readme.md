@@ -2,6 +2,14 @@
 
 直接运行客户端jar包
 
+
+
+```
+java -jar xxx.jar -h host -p port
+```
+
+
+
 # 服务端
 
 ## 功能：
