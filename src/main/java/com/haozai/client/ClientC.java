@@ -35,11 +35,27 @@ public class ClientC {
     }
 
     public static void main(String[] args) {
-        //建立socket连接
+
+        String host = "127.0.0.1";
+        int port = 10086;
+        if (args.length > 4){
+            System.out.println("参数错误");
+            System.out.println("java -jar  xxx.jar  -h host -p port");
+            return;
+        }else if (args.length == 4){
+            for (int i = 0; i < 4; i++) {
+                if ("-h".equals(args[i])){
+                    host = args[i+1].trim();
+                }else if ("-p".equals(args[i])){
+                    port = Integer.parseInt(args[i+1].trim());
+                }
+            }
+        }
+        //吃初始化
         new ClientC();
         try {
 //            Socket socket = new Socket("120.46.36.55", 4455);
-            Socket socket = new Socket("127.0.0.1", 4455);
+            Socket socket = new Socket(host, port);
             //用于接收服务端的消息
             InputStream inputStream = socket.getInputStream();
             DataInputStream dataInputStream = new DataInputStream(inputStream);

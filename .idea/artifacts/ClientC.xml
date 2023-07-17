@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ClientC">
+    <output-path>$PROJECT_DIR$/out/artifacts/ClientC</output-path>
+    <root id="archive" name="ClientC.jar">
+      <element id="module-output" name="RemoteController" />
+    </root>
+  </artifact>
+</component>
