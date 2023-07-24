@@ -24,6 +24,8 @@ java -jar xxx.jar -h host -p port
 
    1、运行后等待客户端连接
 
+服务端默认端口为4455
+
 ![image-20230717164703595](https://hexo-images1.oss-cn-beijing.aliyuncs.com/imgs/image-20230717164703595.png)
 
 2、连接到客户端后，可以使用session 查看当前的客户端连接数量
